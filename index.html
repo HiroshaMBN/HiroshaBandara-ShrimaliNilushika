@@ -276,12 +276,12 @@
 			if (name) {
 				document.getElementById("invitee").innerText = name;
 			} else {
-				document.getElementById("invitee").innerText = "Not invited";
+				document.getElementById("invitee").innerText = "*****************";
 			}
 		})
 		.catch(error => {
 			console.error("Error loading name list:", error);
-			document.getElementById("invitee").innerText = "Not invited";
+			document.getElementById("invitee").innerText = "*****************";
 		});
 </script>
 
