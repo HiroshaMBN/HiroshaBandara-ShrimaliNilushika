@@ -273,6 +273,7 @@
 		.then(response => response.json())
 		.then(data => {
 			const name = data[code];
+			console.log(data[code]);
 			if (name) {
 				document.getElementById("invitee").innerText = name;
 			} else {
